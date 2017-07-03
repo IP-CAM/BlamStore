@@ -1959,3 +1959,15 @@
 2017-06-30 16:42:34 - PHP Notice:  Undefined index: city in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 135
 2017-06-30 17:29:14 - PHP Notice:  Undefined index: office in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 139
 2017-06-30 17:30:31 - PHP Notice:  Undefined index: office in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 139
+2017-07-03 16:20:41 - PHP Notice:  Undefined index: postcode in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\confirm.php on line 173
+2017-07-03 16:38:36 - PHP Notice:  Undefined index: shipping_method in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\guest.php on line 351
+2017-07-03 16:39:01 - PHP Notice:  Undefined index: shipping_method in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\guest.php on line 351
+2017-07-03 16:52:04 - PHP Notice:  Undefined index: shipping_method in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 126
+2017-07-03 17:27:25 - PHP Notice:  Undefined index: title in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 126
+2017-07-03 17:27:45 - PHP Notice:  Use of undefined constant title - assumed 'title' in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 126
+2017-07-03 17:27:45 - PHP Notice:  Array to string conversion in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 126
+2017-07-03 17:34:56 - PHP Notice:  Undefined index: postcode in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\confirm.php on line 173
+2017-07-03 17:43:09 - PHP Notice:  Use of undefined constant title - assumed 'title' in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 126
+2017-07-03 17:43:09 - PHP Notice:  Array to string conversion in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 126
+2017-07-03 17:43:45 - PHP Notice:  Undefined variable: testValue in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\shipping_method.php on line 146
+2017-07-03 17:44:30 - PHP Notice:  Undefined index: postcode in C:\OpenServer\domains\lampa.te.ua\catalog\controller\checkout\confirm.php on line 173

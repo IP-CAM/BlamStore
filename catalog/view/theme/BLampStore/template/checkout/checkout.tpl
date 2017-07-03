@@ -712,7 +712,7 @@ $(document).on('click','#button-shipping-method' , function() {
     $.ajax({
         url: 'index.php?route=checkout/shipping_method/save',
         type: 'post',
-        data: $( '#'+ selector +' select , ' + '#'+ selector +' input[type=\'text\'] ,#collapse-shipping-method input[type=\'radio\']:checked, #collapse-shipping-method'),
+        data: $( '#'+ selector +' select , ' + '#'+ selector +' input[type=\'text\'] ,#collapse-shipping-method input[type=\'radio\']:checked'),
         dataType: 'json',
         beforeSend: function() {
         	$('#button-shipping-method').button('loading');
@@ -732,16 +732,6 @@ $(document).on('click','#button-shipping-method' , function() {
          var elementId = $('#np,#pu').find('input[name=shipping_method]:checked').parents()[1].id;
          var inputCity = $('#'+elementId+' input[name=\'city\']').parent();
          $(inputCity).after('<div class="text-danger">' + json['error']['city'] + '</div>');
-
-        // for (i in json['error']) {
-        //   var element = $('#input-payment-' + i.replace('_', '-'));
-        //
-        //   if ($(element).parent().hasClass('input-group')) {
-        //     $(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
-        //   } else {
-        //     $(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
-        //   }
-        // }
             }
              else {
                 $.ajax({

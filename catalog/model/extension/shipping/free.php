@@ -23,8 +23,9 @@ class ModelExtensionShippingFree extends Model {
 			$quote_data = array();
 
 			$quote_data['free'] = array(
+				'title'        => $this->language->get('text_title'),
 				'code'         => 'free.free',
-				'title'        => $this->language->get('text_description'),
+				'input_title'        => $this->language->get('text_description'),
 				'placeholder'=> $this->language->get('text_placeholder'),
 				'placeholder_for_post'=> $this->language->get('text_placeholder_for_post'),
 				'cost'         => 0.00,

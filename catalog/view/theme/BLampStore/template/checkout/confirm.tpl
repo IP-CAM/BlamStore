@@ -7,7 +7,7 @@
         <td class="text-left"><?php echo $column_model; ?></td>
         <td class="text-right"><?php echo $column_quantity; ?></td>
         <td class="text-right"><?php echo $column_price; ?></td>
-        <td class   ="text-right"><?php echo $column_total; ?></td>
+        <td class="text-right"><?php echo $column_total; ?></td>
       </tr>
     </thead>
     <tbody>

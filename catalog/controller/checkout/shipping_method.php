@@ -139,11 +139,10 @@ class ControllerCheckoutShippingMethod extends Controller {
 				$json['error']['address_1'] = $this->language->get('error_address_1');
 			}
 			if(!$json){
-				$shipping_address['address_1'] = $this->request->post['address'];
-				$shipping_address['city'] = $this->request->post['city'];
+				$this->session->data['shipping_address']['address_1'] = $this->request->post['address'];
+				$this->session->data['shipping_address']['city'] = $this->request->post['city'];
 			}
 		}
-
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}

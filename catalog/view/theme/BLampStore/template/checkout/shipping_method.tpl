@@ -31,7 +31,7 @@
         <input name = "city" type="text" class="form-control required" id="cities" placeholder="<?php echo $shipping_methods['free']['quote']['free']['placeholder']; ?>">
         <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
       </div>
-      <label class="control-label" for="office"> <?php print_r($shipping_methods['free']['quote']['free']['title']) ?></label>
+      <label class="control-label" for="office"> <?php print_r($shipping_methods['free']['quote']['free']['input_title']) ?></label>
       <select name='address' disabled data-placeholder = "<?php echo $shipping_methods['free']['quote']['free']['placeholder_for_post']; ?>" id="office" class="form-control" >
 
 
@@ -67,7 +67,7 @@
       <input type="text" name = "city" id="city_shops" class="form-control"  value="Тернопіль" disabled>
       <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
       </div>
-      <label class="control-label" for="shops"> <?php print_r($shipping_methods['pickup']['quote']['pickup']['title']) ?></label>
+      <label class="control-label" for="shops"> <?php print_r($shipping_methods['pickup']['quote']['pickup']['input_title']) ?></label>
       <select name='address' id="shops" class="form-control" name="">
         <option selected value="маг'Велика Лампа' Шептицького 3">маг'Велика Лампа' вул. Шептицького, 3</option>
         <option value="маг'Велика Лампа' вулиця Євгена Коновальця, 11">маг'Велика Лампа' вул. Євгена Коновальця, 11</option>
