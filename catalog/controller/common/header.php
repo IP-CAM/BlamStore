@@ -50,6 +50,21 @@ class ControllerCommonHeader extends Controller {
 
 		$data['text_home'] = $this->language->get('text_home');
 
+
+    // Informations
+	 $this->load->model('catalog/information');
+
+	 $data['informations'] = array();
+
+	 foreach ($this->model_catalog_information->getInformations() as $result) {
+		 if ($result['bottom']) {
+			 $data['informations'][] = array(
+				 'title' => $result['title'],
+				 'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+			 );
+		 }
+	 }
+
 		// Wishlist
 		if ($this->customer->isLogged()) {
 			$this->load->model('account/wishlist');
@@ -89,7 +104,10 @@ class ControllerCommonHeader extends Controller {
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', true);
 		$data['contact'] = $this->url->link('information/contact');
-		$data['telephone'] = str_ireplace(" ", "<br>", $this->config->get('config_telephone'));
+		$data['telephone'] = array_reduce(explode(' ', $this->config->get('config_telephone')),
+		function($carry, $item){
+     return $carry."<a href=tel:+38$item>$item</a>";
+		},' ');
 
 		// Menu
 		$this->load->model('catalog/category');

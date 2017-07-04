@@ -176,7 +176,7 @@
           <div id="custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
             <label class="col-sm-2 control-label"><?php echo $custom_field['name']; ?></label>
             <div class="col-sm-10">
-              <button type="button" id="button-custom-field<?php echo $custom_field['custom_field_id']; ?>" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-default"><i class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
+              <button type="button" id="button-custom-field<?php echo $custom_field['custom_field_id']; ?>" data-loading-text="<?php echo $text_loading; ?>" class="btn"><i class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
               <input type="hidden" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : ''); ?>" />
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -191,7 +191,7 @@
               <div class="input-group date">
                 <input type="text" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="YYYY-MM-DD" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn"><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -206,7 +206,7 @@
               <div class="input-group time">
                 <input type="text" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="HH:mm" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn "><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -221,7 +221,7 @@
               <div class="input-group datetime">
                 <input type="text" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="YYYY-MM-DD HH:mm" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn "><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -385,7 +385,7 @@
           <div id="custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-group custom-field" data-sort="<?php echo $custom_field['sort_order']; ?>">
             <label class="col-sm-2 control-label"><?php echo $custom_field['name']; ?></label>
             <div class="col-sm-10">
-              <button type="button" id="button-custom-field<?php echo $custom_field['custom_field_id']; ?>" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-default"><i class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
+              <button type="button" id="button-custom-field<?php echo $custom_field['custom_field_id']; ?>" data-loading-text="<?php echo $text_loading; ?>" class="btn "><i class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
               <input type="hidden" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : ''); ?>" />
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -400,7 +400,7 @@
               <div class="input-group date">
                 <input type="text" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="YYYY-MM-DD" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn"><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -415,7 +415,7 @@
               <div class="input-group time">
                 <input type="text" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="HH:mm" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn"><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -430,7 +430,7 @@
               <div class="input-group datetime">
                 <input type="text" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo (isset($register_custom_field[$custom_field['custom_field_id']]) ? $register_custom_field[$custom_field['custom_field_id']] : $custom_field['value']); ?>" placeholder="<?php echo $custom_field['name']; ?>" data-date-format="YYYY-MM-DD HH:mm" id="input-custom-field<?php echo $custom_field['custom_field_id']; ?>" class="form-control" />
                 <span class="input-group-btn">
-                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn"><i class="fa fa-calendar"></i></button>
                 </span></div>
               <?php if (isset($error_custom_field[$custom_field['custom_field_id']])) { ?>
               <div class="text-danger"><?php echo $error_custom_field[$custom_field['custom_field_id']]; ?></div>
@@ -496,13 +496,13 @@
             <input type="checkbox" name="agree" value="1" />
             <?php } ?>
             &nbsp;
-            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
+            <input type="submit" value="<?php echo $button_continue; ?>" class="btn " />
           </div>
         </div>
         <?php } else { ?>
         <div class="buttons">
           <div class="pull-right">
-            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
+            <input type="submit" value="<?php echo $button_continue; ?>" class="btn " />
           </div>
         </div>
         <?php } ?>

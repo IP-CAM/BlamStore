@@ -148,7 +148,23 @@ div.required .control-label:before {
 .nav_top {
   border-bottom: 1px solid;
 }
-
+#top-links > ul.list-inline.top__inforamtion{
+  display: inline-block;
+}
+#top-links > ul:nth-child(2){
+  display: inline-block;
+}
+@media (max-width:646px) {
+  #top-links > ul.list-inline.top__inforamtion{
+    display: none;
+  }
+}
+#form-language > div{
+  margin-bottom: 4px;
+}
+#form-language > div > button:hover{
+  background-color: transparent;
+}
 #top {
   min-height: 40px;
   margin-bottom: 10px;
@@ -282,7 +298,14 @@ div.required .control-label:before {
   color: #f2d888;
   font-size: 23px;
 }
-
+#phone .phone a{
+  display:block;
+  margin-bottom:7px;
+ color: #f2d888;
+}
+#phone .phone a:hover{
+  color: white;
+}
 #phone .icon_phone .fa {
   font-size: 35px;
   margin-top: 5px;
@@ -453,7 +476,7 @@ div.required .control-label:before {
 }
 
 #menu .dropdown-inner li :hover {
-  border: 1px solid #f2d888;
+  color: white;
   font-size: 19px;
 }
 
@@ -692,7 +715,8 @@ footer h5 {
 .btn {
   padding: 7.5px 12px;
   border: 1px solid #831d00;
-  border-radius: 4px;
+  border-radius: 0px;
+  background-color:white;
 }
 .btn:hover {
   background-color: #f2d888;

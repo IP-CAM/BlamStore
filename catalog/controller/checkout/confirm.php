@@ -170,7 +170,7 @@ class ControllerCheckoutConfirm extends Controller {
 				$order_data['shipping_address_1'] = array_key_exists('address_1',$this->session->data['shipping_address']) ? $this->session->data['shipping_address']['address_1']:"";
 				$order_data['shipping_address_2'] = array_key_exists('address_2',$this->session->data['shipping_address']) ?  $this->session->data['shipping_address']['address_2']:"";
 				$order_data['shipping_city'] = array_key_exists('city',$this->session->data['shipping_address']) ? $this->session->data['shipping_address']['city']:"";
-				$order_data['shipping_postcode'] = array_key_exists('city',$this->session->data['shipping_address']) ? $this->session->data['shipping_address']['postcode']:"";
+				$order_data['shipping_postcode'] = array_key_exists('postcode',$this->session->data['shipping_address']) ? $this->session->data['shipping_address']['postcode']:"";
 				$order_data['shipping_zone'] = $this->session->data['shipping_address']['zone'];
 				$order_data['shipping_zone_id'] = $this->session->data['shipping_address']['zone_id'];
 				$order_data['shipping_country'] = $this->session->data['shipping_address']['country'];
