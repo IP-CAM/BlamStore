@@ -140,7 +140,13 @@
               sel.append($("<option>").attr('value', this.Description).text(this.Description));
             });
             $('#office').prop('disabled',false);
-          }
+          },
+         error: function(){
+           var elementId = $('#np,#pu').find('input[name=shipping_method]:checked').parents()[1].id;
+           var inputCity = $('#'+elementId+' input[name=\'city\']').parent();
+           var select = $('#'+elementId+' select').prop('disabled',true);
+           $(inputCity).after('<div class="text-danger">' + 'Произошла ошибка введите назву города еще раз' + '</div>');
+         }
         })
 
       },

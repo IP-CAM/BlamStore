@@ -166,6 +166,9 @@ $(function(){
         var data = {Ref:citi.Ref, Description:citi.Description, DescriptionRu:citi.DescriptionRu};
         return data;
       }));
+    },
+    error:function(){
+      alert('Нет связи с сервером новой почты некоторые функции будут ограничены')
     }
 
     })

@@ -5,6 +5,8 @@ class ControllerCommonHome extends Controller {
 		$this->document->setDescription($this->config->get('config_meta_description'));
 		$this->document->setKeywords($this->config->get('config_meta_keyword'));
 
+    $this->document->addScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js');
+		$this->document->addScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js');
     $this->document->addScript('catalog/view/theme/BlampStore/js/owl.carousel.min.js');
 		$this->document->addScript('catalog/view/theme/BlampStore/js/header_carusel.js');
 

@@ -234,19 +234,83 @@ div.required .control-label:before {
   margin-left: 15px;
 }
 
-.backround_slider {
+.backround_slider_lamp {
   height: 660px;
   background-image: url('../image/bk.png');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
+.backround_slider_ceiling_lamp {
+  height: 660px;
+  background-image: url('../image/ceiling_lamp.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.backround_slider_hightech_lamp {
+  height: 660px;
+  background-image: url('../image/hitech_lamp.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.backround_slider_art_deco_lamp {
+  height: 660px;
+  background-image: url('../image/art_deco_lamp.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.backround_slider_classik_lamp {
+  height: 660px;
+  background-image: url('../image/classik_lamp.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width:786px) {
+  .backround_slider_lamp {
+    height: 460px;
 
+  }
+  .backround_slider_ceiling_lamp {
+    height: 460px;
+
+  }
+  .backround_slider_hightech_lamp {
+    height: 460px;
+
+  }
+  .backround_slider_art_deco_lamp {
+    height: 460px;
+
+  }
+  .backround_slider_classik_lamp {
+    height: 460px;
+
+  }
+}
 #slider {
   position: absolute;
 }
 
+.s1{
 
+ font-size: 20px;
+ position: absolute;
+ top:75%;
+ /*width:40%;*/
+ height: 75px;
+ background-color: #f2d888;
+
+}
+
+.s1 p{
+  text-align: right;
+  margin-top: 25px;
+  margin-right: 20px;
+}
 /* search */
 
 #search {
@@ -255,10 +319,12 @@ div.required .control-label:before {
 
 #imaginary_container>div>input {
   background-color: #DDD;
+  border-radius: 0px;
 }
 
 #search .stylish-input-group .input-group-addon {
   background: #f2d888 !important;
+  border-radius: 0px;
 }
 
 #search .stylish-input-group .form-control {
@@ -367,12 +433,38 @@ div.required .control-label:before {
   min-width: 550px;
   padding: 2px;
   border-radius: 0px;
-  background-color: #f2d888;
+  background-color: #FFF;
   z-index: 1001;
 }
+#cart .item{
+  margin: 7px 0px 7px 15px;
 
-#cart .items {
-	margin: 20px 0px;
+}
+#cart .item div {
+	display: inline-block;
+  vertical-align: middle;
+
+
+}
+.item .item__img{
+  width: 20%;
+}
+.item .item__name{
+  width: 20%;
+}
+.item .item__quantity{
+  width: 8%;
+}
+.item .item__total{
+  width: 27%;
+  font-size: 17px;
+}
+.item .item__button{
+  width: 15%;
+}
+.item .item__button .btn{
+  border: 0px;
+  background: white;
 }
 @media (max-width: 567px) {
   #cart .dropdown-menu {
@@ -381,17 +473,33 @@ div.required .control-label:before {
 }
 
 #cart .total {
-  padding: 5px 0px 5px 0px;
-  border-top: 1px solid #831d00;
-  border-bottom: 1px solid #831d00;
-  margin-left: 0px;
-  margin-right: 0px;
+  text-align: right;
+  background-color: #F2D888;
+  padding: 10px 0px;
+  margin: 0px 15px;
 }
-
+.total div{
+  display: inline-block;
+  font-size: 20px;
+}
+.total__str{
+margin-right: 8px;
+}
+.total__sum{
+margin-right: 20px;
+}
 #cart>ul>li:nth-child(2)>div.row.total {
   font-size: 18px;
 }
+.btn-cart-remove {
+  padding-top: 2px;
+  color: #831d00;
+  background-color: transparent;
+}
 
+.btn-cart-remove:hover, .btn-cart-remove:focus {
+
+}
 @media (max-width:350px) {
   #cart>ul>li:nth-child(2)>div.row.total>div.col-md-4.col-sm-4.col-xs-4.col-xs-offset-4.col-sm-offset-4.col-md-offset-4.text-right {
     margin-left: 25%;
@@ -422,20 +530,6 @@ div.required .control-label:before {
   color: rgb(131, 29, 0);
   margin: 10px 0 10px;
 }
-
-.btn-cart-remove {
-  padding-top: 2px;
-  color: #831d00;
-  background-color: transparent;
-  border: 1px solid #831d00;
-}
-
-.btn-cart-remove:hover {
-  color: #f2d888;
-  background-color: #831d00;
-  border: 1px solid #831d00;
-}
-
 
 /* menu */
 
@@ -654,9 +748,7 @@ footer h5 {
   font-size: 18px;
   border-radius: 0px;
   margin: 20px 0 30px 0;
-  background-color: white;
-  border-bottom: 1px solid #831d00;
-  padding-bottom: 20px;
+  padding: 10px 5px;
 }
 .breadcrumb i {
   font-size: 20px;
