@@ -8,14 +8,36 @@
       <p>
         <strong><a href="http://lampa.te.ua/index.php?route=product/category&path=59">Каталог светильников</a></strong>
       </p>
-
-
     </div>
   </div>
-  <div class="item backround_slider_ceiling_lamp" ></div>
-  <div class="item backround_slider_hightech_lamp" ></div>
-  <div class="item backround_slider_art_deco_lamp" ></div>
-  <div class="item backround_slider_classik_lamp" ></div>
+  <div class="item backround_slider_ceiling_lamp" >
+    <div class = "s1 hidden-xs hidden-sm">
+      <p>
+        <strong><a href="http://lampa.te.ua/index.php?route=product/category&path=59">Потолочние светильники</a></strong>
+      </p>
+    </div>
+  </div>
+  <div class="item backround_slider_hightech_lamp" >
+    <div class = "s1 hidden-xs hidden-sm">
+      <p>
+        <strong><a href="http://lampa.te.ua/index.php?route=product/category&path=59">Каталог светильников</a></strong>
+      </p>
+    </div>
+  </div>
+  <div class="item backround_slider_art_deco_lamp" >
+    <div class = "s1 hidden-xs hidden-sm">
+      <p>
+        <strong><a href="http://lampa.te.ua/index.php?route=product/category&path=59">Каталог светильников</a></strong>
+      </p>
+    </div>
+  </div>
+  <div class="item backround_slider_classik_lamp" >
+    <div class = "s1 hidden-xs hidden-sm">
+      <p>
+        <strong><a href="http://lampa.te.ua/index.php?route=product/category&path=59">Каталог светильников</a></strong>
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="container">

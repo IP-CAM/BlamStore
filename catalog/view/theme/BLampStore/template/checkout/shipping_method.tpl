@@ -13,7 +13,7 @@
 
   <?php foreach ($shipping_methods['free']['quote'] as $quote) { ?>
 
-  <div class="col-md-4 shipping_method" id='np'>
+  <div class="col-md-4 col-sm-6 shipping_method" id='np'>
 
     <div class="carrier__img">
       <img src="catalog\view\theme\BLampStore\image\np-logo.svg" alt="carrier-img" >
@@ -50,7 +50,7 @@
 
   <?php foreach ($shipping_methods['pickup']['quote'] as $quote) { ?>
 
-  <div class="col-md-4 col-sm-offset-1 shipping_method" id='pu'>
+  <div class="col-md-4 col-sm-6 col-md-offset-1 shipping_method" id='pu'>
     <div class="carrier__img">
       <img src="catalog\view\theme\BLampStore\image\pickup.png" alt="carrier-img" >
     </div>

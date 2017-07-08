@@ -1681,3 +1681,82 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
   position: absolute;
   top:277px;
 }
+#content > div.contact{
+  padding: 20px;
+  background-color:#F2D888;
+  font-size: 14px;
+
+}
+#content > div.contact div{
+  display: inline-block;
+  vertical-align: top;
+}
+#content > div.contact div span{
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom:10px;
+}
+.contact > .contact__img{
+  min-width: 20%;
+}
+.contact > .contact__address{
+  min-width: 30%;
+}
+.contact > .contact__info{
+  min-width: 25%;
+}
+.contact > .contact__open{
+  min-width: 10%;
+}
+@media (max-width:992px) {
+  .contact__open{
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+   .contact__info{
+     margin-left: 10px;
+   }
+}
+@media (max-width:680px) {
+  .contact__info{
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+}
+@media (max-width:457px) {
+  .contact{
+    text-align: center;
+  }
+}
+#n > div > div.modal-content{
+  border-radius: 0px;
+}
+#n > div > div > div.info_feedback{
+  padding: 20px;
+}
+#content > .con_information > button > h1{
+  display: inline-block;
+}
+#content > .con_information > button > i{
+  font-size: 2em;
+}
+#content > .con_information > button{
+  border: 0px;
+}
+
+.con_information{
+  text-align: center;
+  width: 100%;
+  display:inline-block;
+  margin-top: 10px;
+}
+@media (max-width:390px) {
+
+  .con_information button{
+    font-size: 1em;
+  }
+  .con_information h1{
+     font-size: 2.2em;
+  }
+}

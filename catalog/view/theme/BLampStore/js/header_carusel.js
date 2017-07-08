@@ -5,10 +5,11 @@ function slide(){
 $(document).ready(function() {
    $('.owl-carousel').owlCarousel({
     animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     center:true,
     items:1,
-    slideSpeed : 2000,
-    autoplay: false,
+    slideSpeed : 4000,
+    autoplay: true,
     loop:true,
     dots:false,
     responsiveClass:true,
@@ -29,8 +30,12 @@ $(document).ready(function() {
 
      }
  },
+
     // autoHeight: false,
-    smartSpeed:450
+    smartSpeed:450,
+    onDragged:function(){
+      slide();
+    }
 });
 slide();
 });
