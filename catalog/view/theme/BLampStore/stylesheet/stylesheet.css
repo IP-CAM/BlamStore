@@ -294,6 +294,12 @@ div.required .control-label:before {
 #slider {
   position: absolute;
 }
+@media (max-width:768px) {
+  .common-home .con-nav{
+    min-height: 458px;
+  }
+}
+
 
 .s1{
 
@@ -372,7 +378,7 @@ div.required .control-label:before {
 #phone .phone a:hover{
   color: white;
 }
-#phone .icon_phone .fa {
+.icon_phone .fa {
   font-size: 35px;
   margin-top: 5px;
 }
@@ -385,12 +391,33 @@ div.required .control-label:before {
     text-align: center;
     margin-top: 0px;
   }
+  .icon_phone{
+    margin-bottom: 7px;
+    margin-right: 10px;
+  }
+  .icon_phone:hover{
+    transform: scale(1.2);
+  }
   .icon_phone>a>i {
     color: #f2d888;
     border: 1px solid;
-    padding: 7px;
-    border-radius: 15px;
-    margin-bottom: 15px;
+    padding: 7px 10px;
+    border-radius: 50%;
+  }
+  .sm_cart_and_phone {
+    text-align: right;
+  }
+  .sm_cart_and_phone .icon_phone{
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .sm_cart_and_phone .icon_phone{
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  #cart {
+    display: inline-block;
+    vertical-align: bottom;
   }
 }
 
@@ -421,12 +448,6 @@ div.required .control-label:before {
   right: 6px;
   top: 25px;
   color: #f2d888;
-}
-
-@media (min-width:768px) and (max-width:991px) {
-  #cart .cart-total {
-    top: 75px;
-  }
 }
 
 #cart .dropdown-menu {
@@ -523,7 +544,6 @@ margin-right: 20px;
 #cart .cart-ref .btn-lg:hover {
   color: #831d00;
   background-color: #f2d888;
-  border: 1px solid #831d00;
 }
 
 #cart>ul>li>p {
@@ -688,7 +708,8 @@ margin-right: 20px;
   list-style: none;
 }
 .sub-category>li {
-  display: inline;
+  padding: 8px;
+  display: inline-block;
 }
 .sub-category>li>a {
   font-size: 14px;
@@ -1097,8 +1118,41 @@ div.add-button>button {
   background-color: #eee;
   overflow: auto;
 }
+
+/*product review*/
+.con_review{
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
+
+}
+.con_review_head{
+  margin-bottom: 20px;
+}
+.con_review .con_review_head div{
+  display: inline-block;
+  vertical-align: top;
+}
+.con_review .con_review_head .fa-stack{
+  width: 1.4em;
+}
+.con_review_head .author{
+      font-size: 17px;
+      min-width: 25%;
+}
+.con_review_head .star{
+  color: #FFD700;
+     min-width: 33%;
+}
+.con_review_head .date_added{
+  min-width: 30%;
+}
 .submit-button {
   padding-left: 0px;
+}
+.con_review .con_review_body{
+  font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font-size: 1.07692em;
+  line-height:1.43em;
 }
 .submit-button button {
   color:#f2d888;
@@ -1744,7 +1798,10 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
 #content > .con_information > button{
   border: 0px;
 }
-
+#content > .con_information > button:hover{
+  background-color: inherit;
+ transform: scale(1.1);
+}
 .con_information{
   text-align: center;
   width: 100%;

@@ -71,7 +71,7 @@
             <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
             <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
             <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+            <!-- <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li> -->
             <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
             <?php } else { ?>
             <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
@@ -98,13 +98,17 @@
       <div id="phone" class="col-md-3 col-sm-4 ">
           <div class="row">
           <!-- <div class="icon_phone"><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a></div> -->
-          <div class="icon_phone hidden-lg hidden-sm hidden-md"><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a></div>
           <div class="col-md-9 col-sm-9 col-xs-12 phone font-numbers">
-            <?php echo $telephone; ?></div>
+            <?php echo $telephone; ?>
+          </div>
           </div>
       </div>
       <div id="search" class="col-md-3 col-sm-4 "><?php echo $search; ?></div>
-      <div id="cart" class="col-md-3 text-right"><?php echo $cart; ?></div>
+      <div class="sm_cart_and_phone col-md-3 col-sm-4 ">
+        <div class="icon_phone hidden-lg hidden-sm hidden-md"><a href="<?php echo $contact; ?>" title="контакти"><i class="fa fa-phone"></i></a></div>
+        <div id="cart" class=" text-right"><?php echo $cart; ?></div>
+      </div>
+
     </div>
   </div>
 </nav>

@@ -50,7 +50,7 @@
                 <?php if ($review_guest) { ?>
                   <div class="form-group required">
                     <fieldset class="col-sm-12">
-                      <label class="control-label label-rating"><?php echo $entry_rating; ?>:</label>
+                    <label class="control-label label-rating"><?php echo $entry_rating; ?>:</label>
                     <div class="rating-product">
                       <input type="radio" id="star5" name="rating" value="5" />
                       <label class = "full" for="star5" title="Отличный"></label>
@@ -81,7 +81,7 @@
                 <?php echo $captcha; ?>
                 <div class="buttons clearfix">
                   <div class="pull-right">
-                    <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><?php echo $button_continue; ?></button>
+                    <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="btn"><?php echo $button_continue; ?></button>
                   </div>
                 </div>
                 <?php } else { ?>

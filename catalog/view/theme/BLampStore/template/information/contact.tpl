@@ -51,8 +51,9 @@
             </div>
           </div>
 
-  <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%20%D0%BB%D0%B0%D0%BC%D0%BF%D0%B0&key=AIzaSyBg7lxgcjEoXPdtUt8a9L2yl6e__okhwUI" allowfullscreen></iframe>
+  <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfYpxfLE2MEcRPS9VQnN1hnc&key=AIzaSyBg7lxgcjEoXPdtUt8a9L2yl6e__okhwUI" allowfullscreen></iframe>
   <div class="con_information">
+
   <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#n">
   <h1><?php echo $heading_title; ?></h1>
   <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
@@ -72,19 +73,13 @@
               <label class="col-sm-2 control-label" for="input-name"><?php echo $entry_name; ?></label>
               <div class="col-sm-10">
                 <input type="text" name="name" value="<?php echo $name; ?>" id="input-name" class="form-control" />
-
-
-
-              </div>
+            </div>
             </div>
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-email"><?php echo $entry_email; ?></label>
               <div class="col-sm-10">
                 <input type="text" name="email" value="<?php echo $email; ?>" id="input-email" class="form-control" />
-
-
-
-              </div>
+            </div>
             </div>
             <div class="form-group required">
               <label class="col-sm-2 control-label" for="input-enquiry"><?php echo $entry_enquiry; ?></label>
@@ -98,7 +93,6 @@
         </form>
         </div>
         <div class="modal-footer">
-         <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
          <button id="send_feedback" class="btn"><?php echo $button_submit; ?></button>
         </div>
       </div>
