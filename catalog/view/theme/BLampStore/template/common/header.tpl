@@ -123,7 +123,9 @@
       <ul class="nav navbar-nav">
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
-        <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle disabled" ><?php echo $category['name']; ?><b class="caret hidden-xs hidden-sm"></b></a>
+        <li class="dropdown">
+          <a href="<?php echo $category['href']; ?>" class="dropdown-toggle disabled" ><?php echo $category['name']; ?>
+            <b class="caret hidden-xs hidden-sm"></b></a>
           <div class="dropdown-menu hidden-sm ">
             <div class="row">
               <div class="col-md-5 hidden-sm hidden-xs"><a href="<?php echo $category['href']; ?>"><img src="<?php echo $category['img_cat']; ?>" alt=""></a></div>

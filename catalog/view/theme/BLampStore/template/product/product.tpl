@@ -46,6 +46,7 @@
             <div class="tab-pane" id="tab-review">
               <form class="form-horizontal" id="form-review">
                 <div id="review"></div>
+                <div class="write_review">
                 <h2><?php echo $text_write; ?></h2>
                 <?php if ($review_guest) { ?>
                   <div class="form-group required">
@@ -87,6 +88,7 @@
                 <?php } else { ?>
                 <?php echo $text_login; ?>
                 <?php } ?>
+                </div>
               </form>
             </div>
             <?php } ?>

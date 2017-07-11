@@ -136,6 +136,7 @@ div.required .control-label:before {
 /* top */
 
 .con-nav {
+  width: 100%;
   background-color: rgb(41, 5, 0);
 }
 
@@ -587,11 +588,23 @@ margin-right: 20px;
 #menu .nav>li>a:hover, #menu .nav>li.open>a {
   color: #f2d888;
   background-color: #831d00;
+  animation: fadein 1s;
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#menu .dropdown-inner li a{
+  -o-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 
+}
 #menu .dropdown-inner li :hover {
   color: white;
-  font-size: 19px;
+  /*font-size: 19px;*/
+  transform: scale(1.2);
 }
 
 #menu .dropdown-menu {
@@ -972,8 +985,18 @@ footer h5 {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   overflow: auto;
+
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .product-thumb:hover{
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
 	box-shadow: 0 3px 4px rgba(0,0,0,0.21);
 }
 .product-thumb .image {
@@ -1153,6 +1176,11 @@ div.add-button>button {
   font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   font-size: 1.07692em;
   line-height:1.43em;
+}
+.write_review{
+  background-color: #F6F6F6;
+  padding: 10px;
+  margin-top: 10px;
 }
 .submit-button button {
   color:#f2d888;
@@ -1424,7 +1452,7 @@ textarea:active,
 input:active,
 textarea:focus,
 input:focus,*/
-button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
+button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active,a:focus,a:hover {
   outline:0px !important;
   -webkit-appearance:none;
 }
@@ -1438,7 +1466,7 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
   background-color: #f2d888;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .sort-products label {
   padding-left: 0px;
@@ -1448,11 +1476,14 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
 }
 .sort-products #input-limit {
   min-width: 90px;
-  border: 1px solid;
+  border: 1px solid #F2D888;
 }
 .sort-products .input-group button {
   box-shadow: none;
-  border: 1px solid;
+  border: 1px solid #F2D888;
+}
+#input-sort:hover{
+  border-color: #F2D888;
 }
 .sort-products button ul li a {
   color:rgb(131, 29, 0);
@@ -1536,12 +1567,15 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
 .btn-select.btn-default:hover, .btn-select.btn-default:active, .btn-select.btn-default.active {
   border-color:#831d00;
 }
-.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:focus {
+.btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:focus a:focus {
   background-color: #f2d888;
   color: #831d00;
   border-color: #831d00;
   outline:0px !important;
   -webkit-appearance:none;
+}
+a:focus, a:hover{
+  color: inherit;
 }
 .btn-select.btn-default ul li.selected {
   background-color: #831d00;
@@ -1797,17 +1831,32 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
 }
 #content > .con_information > button{
   border: 0px;
-}
-#content > .con_information > button:hover{
-  background-color: inherit;
- transform: scale(1.1);
+
+
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .con_information{
   text-align: center;
   width: 100%;
   display:inline-block;
   margin-top: 10px;
+
 }
+#content > .con_information > button:hover{
+  background-color: inherit;
+ transform: scale(1.1);
+}
+
+/*.dropdown-menu{
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}*/
+
 @media (max-width:390px) {
 
   .con_information button{
@@ -1816,4 +1865,11 @@ button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active
   .con_information h1{
      font-size: 2.2em;
   }
+}
+#menu > div.collapse.navbar-collapse.navbar-ex1-collapse > ul > li > div{
+  animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
