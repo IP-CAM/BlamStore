@@ -1,6 +1,17 @@
 function slide(){
   var s1 = $('.s1');
-  TweenLite.to(s1, 2, {width:"500px"});
+  TweenLite.fromTo(s1, 2, {width:"0px"},{width:"500px"});
+  TweenLite.from($('.s1 a'),1,{autoAlpha: 0,delay: 1});
+};
+
+function conNav(){
+  var conNav = $('.con-nav');
+  var menuCon = $('#top,#menu');
+  TweenLite.fromTo(conNav, 2,{height: "130px"},{height: "220px"});
+  TweenLite.fromTo(menuCon, 2, {y:-140},{y:0, onComplete:function(){
+   TweenLite.set($('#top'),{css:{zIndex:1}});
+  }
+ });
 };
 $(document).ready(function() {
    $('.owl-carousel').owlCarousel({
@@ -34,8 +45,10 @@ $(document).ready(function() {
     // autoHeight: false,
     smartSpeed:450,
     onDragged:function(){
+
       slide();
     }
 });
+conNav();
 slide();
 });

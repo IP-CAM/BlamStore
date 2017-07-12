@@ -128,8 +128,8 @@
             <b class="caret hidden-xs hidden-sm"></b></a>
           <div class="dropdown-menu hidden-sm ">
             <div class="row">
-              <div class="col-md-5 hidden-sm hidden-xs"><a href="<?php echo $category['href']; ?>"><img src="<?php echo $category['img_cat']; ?>" alt=""></a></div>
-              <div class="col-md-7"><div class="dropdown-inner">
+
+              <div class="col-md-5"><div class="dropdown-inner">
                 <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
                 <ul class="list-unstyled">
                   <?php foreach ($children as $child) { ?>
@@ -140,6 +140,7 @@
               </div>
 
             </div>
+            <div class="col-md-5 hidden-sm hidden-xs"><a href="<?php echo $category['href']; ?>"><img src="<?php echo $category['img_cat']; ?>" alt=""></a></div>
             </div>
 
 
