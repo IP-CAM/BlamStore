@@ -7,7 +7,7 @@ function slide(){
 function conNav(){
   var conNav = $('.con-nav');
   var menuCon = $('#top,#menu');
-  TweenLite.fromTo(conNav, 2,{height: "130px"},{height: "220px"});
+  TweenLite.fromTo(conNav, 2,{y: -140},{y: 0});
   TweenLite.fromTo(menuCon, 2, {y:-140},{y:0, onComplete:function(){
    TweenLite.set($('#top'),{css:{zIndex:1}});
   }
